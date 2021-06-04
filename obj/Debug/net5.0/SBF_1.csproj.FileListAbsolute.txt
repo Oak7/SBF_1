@@ -1,0 +1,16 @@
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.csprojAssemblyReference.cache
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.AssemblyInfoInputs.cache
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.AssemblyInfo.cs
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.csproj.CoreCompileInputs.cache
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1.deps.json
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1.runtimeconfig.json
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1.runtimeconfig.dev.json
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1.dll
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/ref/SBF_1.dll
+/home/gabi/Desktop/SBF1/SBF_1/bin/Debug/net5.0/SBF_1.pdb
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.dll
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/ref/SBF_1.dll
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.pdb
+/home/gabi/Desktop/SBF1/SBF_1/obj/Debug/net5.0/SBF_1.genruntimeconfig.cache
