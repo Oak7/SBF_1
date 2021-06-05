@@ -7,7 +7,8 @@ namespace SBF_1
     {
     static void Main(string[] args)
         {   
-            //int i;
+            /*******  Vetor posicaoCliente  ***************/
+
             Console.Write("x1: ");
             int x1 = Convert.ToInt32(Console.ReadLine()); 
 
@@ -15,13 +16,32 @@ namespace SBF_1
             int y1 = Convert.ToInt32(Console.ReadLine()); 
                 
             int[] posicaoCliente = new int[2] {x1,y1};
+            
+            Array.Sort(posicaoCliente); //ordenação dos vetores
+    
+            foreach(int item in posicaoCliente)
+            {
+                Console.WriteLine(item);
+            }
+            
+            
 
-            
-            Console.WriteLine("{0},{1}" ,x1,y1);
-            Console.WriteLine("{0},{1}", posicaoCliente[0], posicaoCliente[1]);
-            
+            /*******  Vetor Plano  ***************/
 
-            
+            Console.Write("M: ");
+            int M = Convert.ToInt32(Console.ReadLine()); 
+
+            Console.Write("N: ");    
+            int N = Convert.ToInt32(Console.ReadLine()); 
+                
+            int[] plano = new int[2] {M,N};
+                        
+    
+            foreach(int item in plano)
+            {
+                Console.WriteLine(item);
+            }
+            Array.Sort(plano);
 
             
 
