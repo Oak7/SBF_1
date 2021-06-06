@@ -7,25 +7,6 @@ namespace SBF_1
     {
     static void Main(string[] args)
         {   
-             
-            
-            Console.WriteLine(theArray[0,0]);
-            Console.WriteLine(theArray[0,1]);
-            Console.WriteLine(theArray[1,0]);
-
-            /*******  Vetor posicaoCliente  ***************/
-
-            Console.Write("x1: ");
-            int x1 = Convert.ToInt32(Console.ReadLine()); 
-
-            Console.Write("y1: ");    
-            int y1 = Convert.ToInt32(Console.ReadLine()); 
-                
-            int[,] posicaoCliente = new int[x1, y1];
-            //int[] posicaoCliente = new int[2] {x1, y1};
-
-                       
-         
             /*******  Vetor Plano  ***************/
 
             Console.Write("M: ");
@@ -37,17 +18,42 @@ namespace SBF_1
             //int[,] plano = new int[M,N];
             int[] plano = new int[2] {M, N};  
 
-            double[] maisPerto = new double[M];       
+            double[] maisPerto = new double[M];  
+            if(M >= 0 && N >= 0){
+                
+
+                /*******  Vetor posicaoCliente  ***************/
+
+                Console.Write("X: ");
+                int X = Convert.ToInt32(Console.ReadLine()); 
+
+                Console.Write("Y: ");    
+                int Y = Convert.ToInt32(Console.ReadLine()); 
+                    
+                int[,] posicaoCliente = new int[X, Y];
+                //int[] posicaoCliente = new int[2] {x1, y1};
+
+                if((X >= 0 && X<=M) && (Y >= 0 && Y <= N)){
+                    
+
+                    //
+                } 
+            }
+
+                  
+         
+                 
             
             /********matriz de lojas ****************/            
-            for (int p = 0; p < M; p++)
+            for (int p = 0; p < N; p++)
             {
+
                 int[,] lojas = { { 40, 88 }, { 18, 56 }, { 99, 2 } };
                 //int[,] lojas = new int[2,N];
 
                
-            int x2 = lojas[0,0];
-            int y2 = lojas[0,1];
+                int x2 = lojas[0,0];
+                int y2 = lojas[0,1];
             
             
 
