@@ -7,7 +7,12 @@ namespace SBF_1
     {
     static void Main(string[] args)
         {   
+             
             
+            Console.WriteLine(theArray[0,0]);
+            Console.WriteLine(theArray[0,1]);
+            Console.WriteLine(theArray[1,0]);
+
             /*******  Vetor posicaoCliente  ***************/
 
             Console.Write("x1: ");
@@ -37,18 +42,16 @@ namespace SBF_1
             /********matriz de lojas ****************/            
             for (int p = 0; p < M; p++)
             {
-                
-                Console.Write("w: ");
-                int x2 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("z: ");    
-                int y2 = Convert.ToInt32(Console.ReadLine()); 
+                int[,] lojas = { { 40, 88 }, { 18, 56 }, { 99, 2 } };
+                //int[,] lojas = new int[2,N];
 
-                int[,] lojas = new int[x2,y2];
-                //int[,] lojaB = new int[18,56];
-                //int[,] lojaC = new int[99,2];
+               
+            int x2 = lojas[0,0];
+            int y2 = lojas[0,1];
+            
             
 
-                //int[] lojas = new int[2] {x2, y2};          
+                        
 
           
 
@@ -75,6 +78,10 @@ namespace SBF_1
            Console.WriteLine("{0:0} é a 2ª loja mais próxima",maisPerto[1]);  
            Console.WriteLine("{0:0} é a 3ª loja mais próxima",maisPerto[2]);
                 
-        }            
+           
+        
+
+        }
+    
     }
 }
