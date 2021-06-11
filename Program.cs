@@ -6,7 +6,7 @@ namespace SBF_1
     class Program
     {
     static void Main(string[] args)
-        {   
+        {    
             /*******  Vetor Plano  ***************/
 
             Console.Write("M: ");
@@ -24,70 +24,52 @@ namespace SBF_1
 
                 /*******  Vetor posicaoCliente  ***************/
 
-                Console.Write("X: ");
-                int X = Convert.ToInt32(Console.ReadLine()); 
+                Console.Write("X1: ");
+                int X1 = Convert.ToInt32(Console.ReadLine()); 
 
-                Console.Write("Y: ");    
-                int Y = Convert.ToInt32(Console.ReadLine()); 
+                Console.Write("Y1: ");    
+                int Y1 = Convert.ToInt32(Console.ReadLine()); 
                     
-                int[,] posicaoCliente = new int[X, Y];
+                int[,] posicaoCliente = new int[X1, Y1];
                 //int[] posicaoCliente = new int[2] {x1, y1};
 
-                if((X >= 0 && X<=M) && (Y >= 0 && Y <= N)){
+                if((X1 >= 0 && X1<=M) && (Y1 >= 0 && Y1 <= N)){
                     
-
+                     int[,] lojas = { { 40, 88 }, { 18, 56 }, { 99, 2 } };
                     //
-                } 
-            }
+                    /********matriz de lojas ****************/            
+                    for (int p = 0; p < lojas.Length; p++)
+                    {
+                                      
+                                       
+                        int X2 = lojas[0,0];//p,p
+                        int Y2 = lojas[0,1];
 
-                  
-         
-                 
-            
-            /********matriz de lojas ****************/            
-            for (int p = 0; p < N; p++)
-            {
+                        int X3 = lojas[1,0];
+                        int Y3 = lojas[1,1];
 
-                int[,] lojas = { { 40, 88 }, { 18, 56 }, { 99, 2 } };
-                //int[,] lojas = new int[2,N];
+                        int X4 = lojas[2,0];
+                        int Y4 = lojas[2,1];
 
-               
-                int x2 = lojas[0,0];
-                int y2 = lojas[0,1];
-            
-            
+                        /***** Cálculo da distância entre cliente e lojas ****/
 
+                        var distance = Math.Sqrt((Math.Pow(X1 - lojas[0,0], 2) + Math.Pow(Y1 - Y2, 2)));
+                       
+
+                        Console.WriteLine("{0:0}",distance);
+                        double a = distance;
+                        maisPerto[p]= a;
+                       
                         
-
+                        Console.WriteLine(maisPerto[p]);
+                    } 
+                }        
           
-
-                /***** Cálculo da distância entre cliente e lojas ****/
-                
-
-                var distance = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
-                // Array.Sort();
-
-                Console.WriteLine("{0:0}",distance);
-                double a = distance;
-                maisPerto[p]= a;
-                //double maisPerto = distance;
-                //quero colocar os resultados do cálculo dentro de um vetor
-                
-                Console.WriteLine(maisPerto[p]);
-                
-                
-          
-            } 
-            
+            }             
             Array.Sort(maisPerto);
-           Console.WriteLine("{0:0} é a loja mais próxima", maisPerto[0]); 
-           Console.WriteLine("{0:0} é a 2ª loja mais próxima",maisPerto[1]);  
-           Console.WriteLine("{0:0} é a 3ª loja mais próxima",maisPerto[2]);
-                
-           
-        
-
-        }
-    
+            Console.WriteLine("[{0:0}]", maisPerto[0]); 
+            Console.WriteLine("{0:0} é a 2ª loja mais próxima",maisPerto[1]);  
+            Console.WriteLine("{0:0} é a 3ª loja mais próxima",maisPerto[2]);
+        }    
     }
 }
